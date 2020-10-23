@@ -1,4 +1,4 @@
-# An Onboarding Project with Form Social media sign in and login functionality
+# An Onboarding Project with Form for sign in and login functionality
 
 A new Flutter project.
 
