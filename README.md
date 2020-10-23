@@ -15,5 +15,5 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.io/docs), which offers tutorials, 
 samples, guidance on mobile development, and a full API reference.
 
-<img src="FirstPage.png" width="400"> <img src="SecondPage.png" width="400"> <img src="ThirdPage.png" width="400">
+<img src="FirstPage.png" width="300">  <img src="SecondPage.png" width="300">  <img src="ThirdPage.png" width="300">
 
