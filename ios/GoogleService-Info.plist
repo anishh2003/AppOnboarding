@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>291776309361-87g12vg40uu6gfp4gk3pgqj2bbnq1nru.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.291776309361-87g12vg40uu6gfp4gk3pgqj2bbnq1nru</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>291776309361-f72522jrunv1vnuf6stub8922qb5si9s.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBs56DZ-c9QVN3BZ0wjwlh0-96OFCNpgGY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>291776309361</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.wrangle</string>
+	<key>PROJECT_ID</key>
+	<string>wrangleapptest</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wrangleapptest.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:291776309361:ios:d95165483e62d4b4a853d0</string>
+	<key>DATABASE_URL</key>
+	<string>https://wrangleapptest.firebaseio.com</string>
+</dict>
+</plist>
