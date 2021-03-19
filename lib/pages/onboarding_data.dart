@@ -4,8 +4,10 @@ class SliderModel {
   String imageAssetPath;
   String title;
   String desc;
+  Color backgroundColour;
 
-  SliderModel({this.imageAssetPath, this.title, this.desc});
+  SliderModel(
+      {this.imageAssetPath, this.title, this.desc, this.backgroundColour});
 
   void setImageAssetPath(String getImageAssetPath) {
     imageAssetPath = getImageAssetPath;
@@ -19,6 +21,10 @@ class SliderModel {
     desc = getDesc;
   }
 
+  void setBackgroundColor(Color color) {
+    backgroundColour = color;
+  }
+
   String getImageAssetPath() {
     return imageAssetPath;
   }
@@ -29,6 +35,10 @@ class SliderModel {
 
   String getDesc() {
     return desc;
+  }
+
+  Color getBackgroundColor() {
+    return backgroundColour;
   }
 }
 
@@ -42,6 +52,7 @@ List<SliderModel> getSlides() {
   sliderModel.setTitle("Discover what's nearby");
 //  sliderModel.setImageAssetPath("assets/discover.png");
   sliderModel.setImageAssetPath("assets/location.flr");
+  sliderModel.setBackgroundColor(Color(0xFF6600CC));
   slides.add(sliderModel);
 
   sliderModel = new SliderModel();
@@ -52,6 +63,7 @@ List<SliderModel> getSlides() {
   sliderModel.setTitle("Combine offers");
   //sliderModel.setImageAssetPath("assets/combine.png");
   sliderModel.setImageAssetPath("assets/combine_offers.flr");
+  sliderModel.setBackgroundColor(Color(0xFF9833FF));
   slides.add(sliderModel);
 
   sliderModel = new SliderModel();
@@ -62,6 +74,7 @@ List<SliderModel> getSlides() {
   sliderModel.setTitle("Unlock additional discounts");
 //  sliderModel.setImageAssetPath("assets/unlock.png");
   sliderModel.setImageAssetPath("assets/unlock_discounts.flr");
+  sliderModel.setBackgroundColor(Color(0xFFFFCC06));
   slides.add(sliderModel);
 
   sliderModel = new SliderModel();

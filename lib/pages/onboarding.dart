@@ -46,33 +46,22 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               Container(
 //                height: MediaQuery.of(context).size.height - 230,
                 height: 650,
-                child: PageView(
+                child: PageView.builder(
+                  itemCount: mySlides.length,
+                  itemBuilder: (context, index) {
+                    return SlideTile(
+                      imagePath: mySlides[index].getImageAssetPath(),
+                      title: mySlides[index].getTitle(),
+                      desc: mySlides[index].getDesc(),
+                      backgroundColor: mySlides[index].getBackgroundColor(),
+                    );
+                  },
                   controller: controller,
                   onPageChanged: (index) {
                     setState(() {
                       slideIndex = index;
                     });
                   },
-                  children: <Widget>[
-                    SlideTile(
-                      imagePath: mySlides[0].getImageAssetPath(),
-                      title: mySlides[0].getTitle(),
-                      desc: mySlides[0].getDesc(),
-                      backgroundColor: (Theme.of(context).primaryColor),
-                    ),
-                    SlideTile(
-                      imagePath: mySlides[1].getImageAssetPath(),
-                      title: mySlides[1].getTitle(),
-                      desc: mySlides[1].getDesc(),
-                      backgroundColor: (Theme.of(context).primaryColorLight),
-                    ),
-                    SlideTile(
-                      imagePath: mySlides[2].getImageAssetPath(),
-                      title: mySlides[2].getTitle(),
-                      desc: mySlides[2].getDesc(),
-                      backgroundColor: Theme.of(context).buttonColor,
-                    ),
-                  ],
                 ),
               ),
               signUpButton(context),
@@ -102,8 +91,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 }
 
 class SlideTile extends StatelessWidget {
-  String imagePath, title, desc;
-  Color backgroundColor;
+  final String imagePath, title, desc;
+  final Color backgroundColor;
 
   SlideTile({this.imagePath, this.title, this.desc, this.backgroundColor});
 
